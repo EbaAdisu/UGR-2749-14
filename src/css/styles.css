@@ -46,11 +46,12 @@ address img,footer img{
 
 header{
   position: fixed;
-  top:0;
+  top:0em;
   width:100%;
 }
 #headingbar{
-  display: flex;
+  display: grid;
+  grid-template-columns:0fr 0fr;
   background-color: green;
   justify-content: space-between;
   
@@ -103,10 +104,11 @@ main{
 /*main-home*/
 
 #main-home{
-  display: flex;
+  display: grid;
+  grid-template-rows: 0fr 0fr;
   align-items: center;
+  text-align: center;
   background-image: url("../images/bg2.jpg");
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -139,8 +141,7 @@ main{
 /*main-projects*/
 
 #main-projects{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
 }
 
 .project-box{
@@ -159,16 +160,16 @@ main{
 /*main-contact*/
 
 #main-contact{
-  display: flex;
+  display: grid;
+  grid-template-rows: 0fr 0fr;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
 #contacts{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 address ul{
@@ -207,8 +208,8 @@ input[type="submit"] {
 /*footer*/
 
 footer{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns:  1fr 0fr;
   justify-content: space-between;
 }
 
@@ -228,6 +229,6 @@ a{
 }
 a:link { color: white; }
 a:visited { color: lightcyan; }
-a:focus {  background-color:lightblue; }
+a:focus { background-color:lightblue; }
 a:hover { background-color: lightblue; }
 a:active { color: blue; background-color: lightblue; }
