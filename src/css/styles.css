@@ -1,0 +1,233 @@
+body{
+  background-color: black;
+  color:white;
+  font-family: Fantasy, "Duru Sans", Verdana, sans-serif;/*cursive*/
+}
+
+h1{
+  text-transform: uppercase;
+}
+/*  Images*/
+address img,footer img{
+  width:20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+#logo{
+  display: block;
+  height: 100%;
+  width:100px;
+  padding: 5%;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+#menu-button{
+  display: block;
+  background-color: green;
+  padding: 0%;
+  border: 0;
+  box-sizing: border-box;
+  margin-right: 3%;
+}
+
+#menu-button i{
+  font-size: 3em;
+  background-color: green;
+  color:white;
+}
+
+/*Header*/
+
+#current-page{
+  background-color: darkgreen;
+}
+
+header{
+  position: fixed;
+  top:0;
+  width:100%;
+}
+#headingbar{
+  display: flex;
+  background-color: green;
+  justify-content: space-between;
+  
+}
+
+#drp{
+  font-family: Fantasy;
+  display: block;
+  color:darkgreen;
+}
+
+nav ul,footer ul,address ul{
+  list-style-type: none;
+}
+
+#dropdown {
+  margin: 0;
+  padding: 0;
+  display: block;
+  background-color: lightgreen;
+  align-items: center;
+  justify-content: center;
+}
+
+#dropdown li a {
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  border: 0px solid;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+}
+
+/*phone menu*/
+#drp{
+  display:none ;
+}
+
+header:hover #drp{
+  display: block;
+  color:black;
+  width: 100%;
+}
+
+/*main*/
+main{
+  margin-top: 100px;
+}
+/*main-home*/
+
+#main-home{
+  display: flex;
+  align-items: center;
+  background-image: url("../images/bg2.jpg");
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#main-home img{
+  border-radius: 5%;
+  width:80%;
+  display: block;
+  margin: auto;
+  height: 100%;
+}
+
+/*main-about*/
+
+#main-about{
+  padding: 5px;
+}
+
+#profile-img{
+  display: block;
+  max-width:500px;
+  max-height:500px;
+  border-radius: 40%;
+  margin: 10px auto;
+}
+
+#main-about h1{
+  text-align: center;
+}
+
+/*main-projects*/
+
+#main-projects{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-box{
+  border: 0px solid darkgreen;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 0 10px 0 white;
+  margin: 5px;
+  padding: 5px;
+}
+
+.project-box h2{
+  text-align: center;
+}
+
+/*main-contact*/
+
+#main-contact{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#contacts{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+address ul{
+  margin: 0 5px;
+  padding: 0;
+}
+
+form{
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin-top: 20px ;
+  padding-bottom: 2em;
+}
+
+input,
+textarea{
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: darkgreen;
+  border-color: white;
+  min-width: 300px;
+}
+
+
+
+/*footer*/
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer ul{
+  margin: 0 5px;
+  padding: 0;
+}
+
+#copyright{
+  margin-right: 100%;
+}
+
+/*links*/
+
+a{
+  text-decoration: none;
+}
+a:link { color: white; }
+a:visited { color: lightcyan; }
+a:focus {  background-color:lightblue; }
+a:hover { background-color: lightblue; }
+a:active { color: blue; background-color: lightblue; }
