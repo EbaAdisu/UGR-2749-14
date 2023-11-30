@@ -5,69 +5,77 @@
   <title>Contact</title>
   <meta charset="utf-8">
   <meta name="viewport" content=" width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   
 </head>
 <body>
   <header>
-    <a href="home.html"><img src="images/logo3.jpg" alt="logo"></a>
-    <nav>
-      <button class="dropbtn">
-        <img src="images/menu1.jpg" alt="menu">
+    <div id="headingbar">
+      <a href="home.html">
+        <img id="logo" src="images/logo3.jpg"  alt="logo">
+      </a>
+      <button id="menu-button">
+        <i class="fa-solid fa-bars"></i>
       </button>
-      <ul>
+    </div>
+    
+    <nav id="drp">
+      <ul id="dropdown">
         <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="hobbies.html">Hobbies</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a id="current-page" href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
   
   
-  <main>
+  <main id="main-contact">
     <address>
-    <p>
+      <p>
         Address<br><br>
         Mr. Eba Adisu  <br>
         Sofware Student <br>
         Addis Ababa Institute of Technology, 5 Kilo<br><br>
-      Contact
-      <ul>
-        <li><img src="images/email.jpg" alt="email">ebaadisu2@gmail.com</li>
-        <li><img src="images/linkedin.jpg" alt="linkedin">linkedin</li>
-        <li><img src="images/phone.jpg" alt="phone number">+251945813571</li>
-      </ul>
-      Social media
-      <ul>
-        <li><img src="images/yt.jpg" alt="youtube">youtube</li>
-        <li><img src="images/insta.jpg" alt="instagram">instagram</li>
-        <li><img src="images/fb.jpg" alt="facebook">facebook</li>
-      </ul>
-    </p>
+      </p>
+      <div id="contacts">
+        
+        <ul><h2>Contact</h2>
+          <li><i class="fa-regular fa-envelope"></i> ebaadisu2@gmail.com</li>
+          <li><i class="fa-brands fa-linkedin"></i> linkedin</li>
+          <li><i class="fa-solid fa-phone"></i> +251945813571</li>
+        </ul>
+        
+        <ul><h2>Social media</h2>
+          <li><i class="fa-brands fa-youtube"></i> youtube</li>
+          <li><i class="fa-brands fa-instagram"></i> instagram</li>
+          <li><i class="fa-brands fa-facebook"></i> facebook</li>
+        </ul>
+      </div>
     </address>
     
     <form>
       <fieldset>
         <label for="subject">Subject: <input id="subject" type="text" required /></label>
         <label for="email">Email: <input id="email" type="email" required /></label>
-        <label for="message"><textarea id="message" rows="3" cols="30" placeholder="leave a message..."></textarea>
+        <label for="message">Write message: <textarea id="message" rows="3" cols="30" placeholder="leave a message..." required> </textarea>
       </label>
       </fieldset>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Send" />
     </form>
   </main>
   
-  
+  <hr>
   <footer>
     <section>
       <h2>Contact</h2>
       <ul>
-        <li><img src="images/email.jpg" alt="email">ebaadisu2@gmail.com</li>
-        <li><img src="images/linkedin.jpg" alt="linkedin">linkedin</li>
-        <li><img src="images/phone.jpg" alt="phone number">+251945813571</li>
-      </ul>
+          <li><i class="fa-regular fa-envelope"></i> ebaadisu2@gmail.com</li>
+          <li><i class="fa-brands fa-linkedin"></i> linkedin</li>
+          <li><i class="fa-solid fa-phone"></i> +251945813571</li>
+        </ul>
     </section>
     <section>
       <h2>Sitemap</h2>
@@ -78,7 +86,7 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </section>
-    <p>copyright</p>
+    <p id="copyright">copyright</p>
   </footer>
  
 </body>

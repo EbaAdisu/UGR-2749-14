@@ -5,16 +5,24 @@
   <title>Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content=" width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   
 </head>
 <body>
   <header>
-    <a href="home.html"><img src="images/logo3.jpg"  alt="logo"></a>
-    <nav>
-      <button><img src="images/menu1.jpg" alt="menu"></button>
-      <ul>
-        <li><a href="home.html">Home</a></li>
+    <div id="headingbar">
+      <a href="home.html">
+        <img id="logo" src="images/logo3.jpg"  alt="logo">
+      </a>
+      <button id="menu-button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    
+    <nav id="drp">
+      <ul id="dropdown">
+        <li><a id="current-page" href="home.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="hobbies.html">Hobbies</a></li>
@@ -24,9 +32,9 @@
   </header>
   
   
-  <main>
+  <main id="main-home">
     <img src="images/profile1.jpg" alt="profile"> 
-    <h2>Wellcome to my Porfolio</h2>
+    <h2>Welcome to my Porfolio</h2>
   </main>
   
   
@@ -34,10 +42,10 @@
     <section>
       <h2>Contact</h2>
       <ul>
-        <li><img src="images/email.jpg" alt="email">ebaadisu2@gmail.com</li>
-        <li><img src="images/linkedin.jpg" alt="linkedin">linkedin</li>
-        <li><img src="images/phone.jpg" alt="phone number">+251945813571</li>
-      </ul>
+          <li><i class="fa-regular fa-envelope"></i> ebaadisu2@gmail.com</li>
+          <li><i class="fa-brands fa-linkedin"></i> linkedin</li>
+          <li><i class="fa-solid fa-phone"></i> +251945813571</li>
+        </ul>
     </section>
     <section>
       <h2>Sitemap</h2>
@@ -48,7 +56,7 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </section>
-    <p>copyright</p>
+    <p id="copyright">copyright</p>
   </footer>
  
 </body>

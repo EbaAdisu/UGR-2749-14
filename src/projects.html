@@ -5,20 +5,26 @@
   <title>Project</title>
   <meta charset="utf-8">
   <meta name="viewport" content=" width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   
 </head>
 <body>
   <header>
-    <a href="home.html"><img src="images/logo3.jpg" alt="logo"></a>
-    <nav>
-      <button class="dropbtn">
-        <img src="images/menu1.jpg" alt="menu">
+    <div id="headingbar">
+      <a href="home.html">
+        <img id="logo" src="images/logo3.jpg"  alt="logo">
+      </a>
+      <button id="menu-button">
+        <i class="fa-solid fa-bars"></i>
       </button>
-      <ul>
+    </div>
+    
+    <nav id="drp">
+      <ul id="dropdown">
         <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a id="current-page" href="projects.html">Projects</a></li>
         <li><a href="hobbies.html">Hobbies</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -26,56 +32,56 @@
   </header>
   
   
-  <main>
-    <article>
+  <main id="main-projects">
+    <article class="project-box">
       <h2>Project1 Title</h2>
       <p>
         here goes project discreption sackus as much as you can
         and also try to remeber your prpjects and eeeee ye you know
         that right come one you remeber now
       </p>
-      <a href="">Github repository</a>
+      <a href=""><u>Github repository</u></a>
     </article>
-    <article>
+    <article class="project-box">
       <h2>Project2 Title</h2>
       <p>
         here goes project discreption sackus as much as you can
         and also try to remeber your prpjects and eeeee ye you know
         that right come one you remeber now
       </p>
-      <a href="">Github repository</a>
+      <a href=""><u>Github repository</u></a>
     </article>
-    <article>
+    <article class="project-box">
       <h2>Project3 Title</h2>
       <p>
         here goes project discreption sackus as much as you can
         and also try to remeber your prpjects and eeeee ye you know
         that right come one you remeber now
       </p>
-      <a href="">Github repository</a>
+      <a href=""><u>Github repository</u></a>
     </article>
   </main>
   
-  
+  <hr>
   <footer>
     <section>
       <h2>Contact</h2>
       <ul>
-        <li><img src="images/email.jpg" alt="email">ebaadisu2@gmail.com</li>
-        <li><img src="images/linkedin.jpg" alt="linkedin">linkedin</li>
-        <li><img src="images/phone.jpg" alt="phone number">+251945813571</li>
-      </ul>
+          <li><i class="fa-regular fa-envelope"></i> ebaadisu2@gmail.com</li>
+          <li><i class="fa-brands fa-linkedin"></i> linkedin</li>
+          <li><i class="fa-solid fa-phone"></i> +251945813571</li>
+        </ul>
     </section>
     <section>
       <h2>Sitemap</h2>
       <ul>
+        <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
         <li><a href="hobbies.html">Hobbies</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </section>
-    <p>copyright</p>
+    <p id="copyright">copyright</p>
   </footer>
  
 </body>
