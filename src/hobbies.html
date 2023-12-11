@@ -10,21 +10,21 @@
   
 </head>
 <body>
-  <header>
-    <div id="headingbar">
+  <header class="header">
+    <div class="header__bar">
       <a href="home.html">
-        <img id="logo" src="images/logo3.jpg"  alt="logo">
+        <img class="header__bar__logo" src="images/logo3.jpg"  alt="logo">
       </a>
-      <button id="menu-button">
+      <button class="header__bar__menubutton">
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
     
-    <nav id="drp">
-      <ul id="dropdown">
+    <nav class="header__dropdown">
+      <ul class="dropdown__content list">
         <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a  href="projects.html">Projects</a></li>
         <li><a id="current-page" href="hobbies.html">Hobbies</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -33,7 +33,8 @@
   
   
   <main>
-    <img src="images/read.jpg" alt="reading"> 
+    <div class="main__hobbies">
+    <img class="main__hobbies__img"src="images/read.jpg" alt="reading"> 
     <h2>Reading</h2>
     <p>
       Lorem Ipsum is simply dummy text of the printing and 
@@ -42,7 +43,7 @@
       printer took a galley of type and scrambled it to make a 
       type specimen book. It 
     </p>
-    <img src="images/travel1.jpg" alt="traveling"> 
+    <img class="main__hobbies__img" src="images/travel1.jpg" alt="traveling"> 
     <h2>Traveling</h2>
     <p>
       Lorem Ipsum is simply dummy text of the printing and 
@@ -51,7 +52,7 @@
       printer took a galley of type and scrambled it to make a 
       type specimen book. It 
     </p>
-    <img src="images/sing2.jpg" alt="singing"> 
+    <img class="main__hobbies__img"src="images/sing2.jpg" alt="singing"> 
     <h2>Singing</h2>
     <p>
       Lorem Ipsum is simply dummy text of the printing and 
@@ -60,29 +61,40 @@
       printer took a galley of type and scrambled it to make a 
       type specimen book. It 
     </p>
-    
+    </div>
+    <aside class="aside">
+      <div class="aside__follow">
+        <h2 class="aside__follow--tablet">Follow me</h2>
+        <ul class="aside__follow__list">
+          <li><i class="fa-brands fa-youtube"></i> <em class="aside__follow--tablet">youtube</em></li>
+          <li><i class="fa-brands fa-instagram"></i> <em class="aside__follow--tablet">instagram</em></li>
+          <li><i class="fa-brands fa-facebook"></i> <em class="aside__follow--tablet">facebook</em></li>
+        </ul>
+        <img class="aside__follow__img aside__follow--tablet" src="images/profile3.jpg">
+      </div>
+    </aside>
   </main>
   
   <hr>
-  <footer>
-    <section>
+  <footer class="footer">
+    <section class="footer__contact">
       <h2>Contact</h2>
-      <ul>
+      <ul class="list">
           <li><i class="fa-regular fa-envelope"></i> ebaadisu2@gmail.com</li>
           <li><i class="fa-brands fa-linkedin"></i> linkedin</li>
           <li><i class="fa-solid fa-phone"></i> +251945813571</li>
         </ul>
     </section>
-    <section>
+    <section class="footer__sitemap">
       <h2>Sitemap</h2>
-      <ul>
-        <li><a href="home.html">Home</a></li>
+      <ul class="list">
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </section>
-    <p id="copyright">copyright</p>
+    <p class="footer__copyright">copyright</p>
   </footer>
  
 </body>

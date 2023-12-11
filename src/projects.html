@@ -10,18 +10,18 @@
   
 </head>
 <body>
-  <header>
-    <div id="headingbar">
+  <header class="header">
+    <div class="header__bar">
       <a href="home.html">
-        <img id="logo" src="images/logo3.jpg"  alt="logo">
+        <img class="header__bar__logo" src="images/logo3.jpg"  alt="logo">
       </a>
-      <button id="menu-button">
+      <button class="header__bar__menubutton">
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
     
-    <nav id="drp">
-      <ul id="dropdown">
+    <nav class="header__dropdown">
+      <ul class="dropdown__content list">
         <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a id="current-page" href="projects.html">Projects</a></li>
@@ -32,9 +32,10 @@
   </header>
   
   
-  <main id="main-projects">
-    <article class="project-box">
-      <h2>Project1 Title</h2>
+  <main >
+    <div class="main__projects">
+    <article class="main__projects__box">
+      <h2 class="title">Project1 Title</h2>
       <p>
         here goes project discreption sackus as much as you can
         and also try to remeber your prpjects and eeeee ye you know
@@ -42,8 +43,8 @@
       </p>
       <a href=""><u>Github repository</u></a>
     </article>
-    <article class="project-box">
-      <h2>Project2 Title</h2>
+    <article class="main__projects__box">
+      <h2 class="title">Project2 Title</h2>
       <p>
         here goes project discreption sackus as much as you can
         and also try to remeber your prpjects and eeeee ye you know
@@ -51,8 +52,8 @@
       </p>
       <a href=""><u>Github repository</u></a>
     </article>
-    <article class="project-box">
-      <h2>Project3 Title</h2>
+    <article class="main__projects__box">
+      <h2 class="title">Project3 Title</h2>
       <p>
         here goes project discreption sackus as much as you can
         and also try to remeber your prpjects and eeeee ye you know
@@ -60,28 +61,40 @@
       </p>
       <a href=""><u>Github repository</u></a>
     </article>
+    </div>
+    <aside class="aside">
+      <div class="aside__follow">
+        <h2 class="aside__follow--tablet">Follow me</h2>
+        <ul class="aside__follow__list">
+          <li><i class="fa-brands fa-youtube"></i> <em class="aside__follow--tablet">youtube</em></li>
+          <li><i class="fa-brands fa-instagram"></i> <em class="aside__follow--tablet">instagram</em></li>
+          <li><i class="fa-brands fa-facebook"></i> <em class="aside__follow--tablet">facebook</em></li>
+        </ul>
+        <img class="aside__follow__img aside__follow--tablet" src="images/profile3.jpg">
+      </div>
+    </aside>
   </main>
   
   <hr>
-  <footer>
-    <section>
+  <footer class="footer">
+    <section class="footer__contact">
       <h2>Contact</h2>
-      <ul>
+      <ul class="list">
           <li><i class="fa-regular fa-envelope"></i> ebaadisu2@gmail.com</li>
           <li><i class="fa-brands fa-linkedin"></i> linkedin</li>
           <li><i class="fa-solid fa-phone"></i> +251945813571</li>
         </ul>
     </section>
-    <section>
+    <section class="footer__sitemap">
       <h2>Sitemap</h2>
-      <ul>
-        <li><a href="home.html">Home</a></li>
+      <ul class="list">
         <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="hobbies.html">Hobbies</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </section>
-    <p id="copyright">copyright</p>
+    <p class="footer__copyright">copyright</p>
   </footer>
  
 </body>

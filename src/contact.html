@@ -10,21 +10,21 @@
   
 </head>
 <body>
-  <header>
-    <div id="headingbar">
+  <header class="header">
+    <div class="header__bar">
       <a href="home.html">
-        <img id="logo" src="images/logo3.jpg"  alt="logo">
+        <img class="header__bar__logo" src="images/logo3.jpg"  alt="logo">
       </a>
-      <button id="menu-button">
+      <button class="header__bar__menubutton">
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
     
-    <nav id="drp">
-      <ul id="dropdown">
+    <nav class="header__dropdown">
+      <ul class="dropdown__content list">
         <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a  href="about.html">About</a></li>
+        <li><a  href="projects.html">Projects</a></li>
         <li><a href="hobbies.html">Hobbies</a></li>
         <li><a id="current-page" href="contact.html">Contact</a></li>
       </ul>
@@ -32,23 +32,24 @@
   </header>
   
   
-  <main id="main-contact">
-    <address>
+  <main >
+    <div class="main__contact">    
+    <address class="main__contact__address">
       <p>
         Address<br><br>
         Mr. Eba Adisu  <br>
         Sofware Student <br>
         Addis Ababa Institute of Technology, 5 Kilo<br><br>
       </p>
-      <div id="contacts">
+      <div class="main__contact__address__contacts">
         
-        <ul><h2>Contact</h2>
+        <ul class="list"><h2>Contact</h2>
           <li><i class="fa-regular fa-envelope"></i> ebaadisu2@gmail.com</li>
           <li><i class="fa-brands fa-linkedin"></i> linkedin</li>
           <li><i class="fa-solid fa-phone"></i> +251945813571</li>
         </ul>
         
-        <ul><h2>Social media</h2>
+        <ul class="list"><h2>Social media</h2>
           <li><i class="fa-brands fa-youtube"></i> youtube</li>
           <li><i class="fa-brands fa-instagram"></i> instagram</li>
           <li><i class="fa-brands fa-facebook"></i> facebook</li>
@@ -56,37 +57,49 @@
       </div>
     </address>
     
-    <form>
-      <fieldset>
-        <label for="subject">Subject: <input id="subject" type="text" required /></label>
-        <label for="email">Email: <input id="email" type="email" required /></label>
-        <label for="message">Write message: <textarea id="message" rows="3" cols="30" placeholder="leave a message..." required> </textarea>
+    <form class="main__contact__form">
+      <fieldset class="main__contact__form__fieldset">
+        <label for="subject">Subject: <input id="subject" class="main__contact__form__input" type="text" required /></label>
+        <label for="email">Email: <input id="email" class="main__contact__form__input" type="email" required /></label>
+        <label for="message">Write message: <textarea id="message" class="main__contact__form__textarea"rows="3" cols="30" placeholder="leave a message..." required> </textarea>
       </label>
-      </fieldset>
-      <input type="submit" value="Send" />
+      </fieldset class="main__contact__form__fieldset">
+      <input class="main__contact__form__submit"type="submit" value="Send" />
     </form>
+    </div>
+    <aside class="aside">
+      <div class="aside__follow">
+        <h2 class="aside__follow--tablet">Follow me</h2>
+        <ul class="aside__follow__list">
+          <li><i class="fa-brands fa-youtube"></i> <em class="aside__follow--tablet">youtube</em></li>
+          <li><i class="fa-brands fa-instagram"></i> <em class="aside__follow--tablet">instagram</em></li>
+          <li><i class="fa-brands fa-facebook"></i> <em class="aside__follow--tablet">facebook</em></li>
+        </ul>
+        <img class="aside__follow__img aside__follow--tablet" src="images/profile3.jpg">
+      </div>
+    </aside>
   </main>
   
   <hr>
-  <footer>
-    <section>
+  <footer class="footer">
+    <section class="footer__contact">
       <h2>Contact</h2>
-      <ul>
+      <ul class="list">
           <li><i class="fa-regular fa-envelope"></i> ebaadisu2@gmail.com</li>
           <li><i class="fa-brands fa-linkedin"></i> linkedin</li>
           <li><i class="fa-solid fa-phone"></i> +251945813571</li>
         </ul>
     </section>
-    <section>
+    <section class="footer__sitemap">
       <h2>Sitemap</h2>
-      <ul>
+      <ul class="list">
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="hobbies.html">Hobbies</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </section>
-    <p id="copyright">copyright</p>
+    <p class="footer__copyright">copyright</p>
   </footer>
  
 </body>
