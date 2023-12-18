@@ -7,34 +7,32 @@
   <meta name="viewport" content=" width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  
 </head>
 <body>
-  <header class="header">
-    <div class="header__bar">
-      <a href="home.html">
-        <img class="header__bar__logo" src="images/logo3.jpg"  alt="logo">
-      </a>
-      <button class="header__bar__menubutton">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </div>
-    
-    <nav class="header__dropdown">
-      <ul class="dropdown__content list">
-        <li><a id="current-page" href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="hobbies.html">Hobbies</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
+    <header class="header">
+        <div class="header__bar">
+          <a href="home.html">
+            <img class="header__bar__logo" src="images/logo3.jpg"  alt="logo">
+          </a>
+          <button class="header__bar__menubutton" id="menuButton">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        
+        <nav class="header__dropdown " id="dropdownMenu" >
+          <ul  class="dropdown__content list">
+            <li><a  href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header> 
   
   <main class="main__home">
     <img class="main__home__img" src="images/profile1.jpg" alt="profile"> 
-    <h2>Wellcome to my Porfolio</h2>
+    <h2 id="welcomeMessage"></h2>
   </main>
   
   
@@ -59,5 +57,8 @@
     <p class="footer__copyright">copyright</p>
   </footer>
  
+  <script src="./js/script.js">
+  </script>
+
 </body>
 </html>

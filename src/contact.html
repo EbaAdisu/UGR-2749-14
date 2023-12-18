@@ -6,31 +6,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content=" width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header__bar">
-      <a href="home.html">
-        <img class="header__bar__logo" src="images/logo3.jpg"  alt="logo">
-      </a>
-      <button class="header__bar__menubutton">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </div>
-    
-    <nav class="header__dropdown">
-      <ul class="dropdown__content list">
-        <li><a href="home.html">Home</a></li>
-        <li><a  href="about.html">About</a></li>
-        <li><a  href="projects.html">Projects</a></li>
-        <li><a href="hobbies.html">Hobbies</a></li>
-        <li><a id="current-page" href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
+    <header class="header">
+        <div class="header__bar">
+          <a href="home.html">
+            <img class="header__bar__logo" src="images/logo3.jpg"  alt="logo">
+          </a>
+          <button class="header__bar__menubutton" id="menuButton">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        
+        <nav class="header__dropdown " id="dropdownMenu" >
+          <ul  class="dropdown__content list">
+            <li><a  href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>  
   
   <main >
     <div class="main__contact">    
@@ -57,15 +55,19 @@
       </div>
     </address>
     
-    <form class="main__contact__form">
+    <form class="main__contact__form" id="myForm">
       <fieldset class="main__contact__form__fieldset">
         <label for="subject">Subject: <input id="subject" class="main__contact__form__input" type="text" required /></label>
         <label for="email">Email: <input id="email" class="main__contact__form__input" type="email" required /></label>
-        <label for="message">Write message: <textarea id="message" class="main__contact__form__textarea"rows="3" cols="30" placeholder="leave a message..." required> </textarea>
-      </label>
+        <label for="message">Write message: <textarea id="message" class="main__contact__form__textarea"rows="3" cols="30" placeholder="leave a message..." required> </textarea></label>
       </fieldset class="main__contact__form__fieldset">
       <input class="main__contact__form__submit"type="submit" value="Send" />
     </form>
+    <div class="custom-alert" id="customAlert">
+      <p>Message submitted successfully!</p>
+      <button onclick="closeAlert()">OK</button>
+    </div>
+    <div class="backdrop" id="backdrop"></div>
     </div>
     <aside class="aside">
       <div class="aside__follow">
@@ -79,7 +81,7 @@
       </div>
     </aside>
   </main>
-  
+
   <hr>
   <footer class="footer">
     <section class="footer__contact">
@@ -101,6 +103,9 @@
     </section>
     <p class="footer__copyright">copyright</p>
   </footer>
- 
+
+  <script src="./js/script.js">
+  </script>
+  
 </body>
 </html>
