@@ -5,51 +5,94 @@
   <title>Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content=" width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css"/>
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    
 </head>
-<body>
-  <header>
-    <a href="home.html"><img src="images/logo3.jpg"  alt="logo"></a>
-    <nav>
-      <button><img src="images/menu1.jpg" alt="menu"></button>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="hobbies.html">Hobbies</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+<body class="has-background-black has-text-white">
+  <header >
+    <nav class="navbar has-background-success" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand is-hidden-touch">
+        <a class="navbar-item" href="home.html">
+          <img src="images/logo3.jpg" width="112" height="28">
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu ">
+        
+        <div class="navbar-end ">
+          <a class="navbar-item" href="home.html">Home</a>
+          <a class="navbar-item" href="about.html">About</a>
+          <a class="navbar-item" href="projects.html">Projects</a>
+          <a class="navbar-item" href="hobbies.html">Hobbies</a>
+          <a class="navbar-item" href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="dropdown navbar-end is-hoverable is-hidden-desktop is-flex is-justify-content-space-between">
+        <div class="navbar-brand ">
+          <a class="navbar-item" href="home.html">
+            <img src="images/logo3.jpg" width="112" height="28">
+          </a>
+        </div>
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+            <i class="fa-solid fa-bars is-size-3 " ></i> 
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="home.html">Home</a>
+            <a class="dropdown-item" href="about.html">About</a>
+            <a class="dropdown-item" href="projects.html">Projects</a>
+            <a class="dropdown-item" href="hobbies.html">Hobbies</a>
+            <a class="dropdown-item" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
   
-  
-  <main>
-    <img src="images/profile1.jpg" alt="profile"> 
-    <h2>Wellcome to my Porfolio</h2>
+  <main class="">
+    <section class="section">
+      <div class="container">
+        <div class="columns is-align-items-center"> 
+          <img class="column" src="images/profile1.jpg" alt="profile"> 
+          <div class="column has-text-centered has-text-white " stylee="margin:auto;">
+            <h2 class="title" style="color:white;">Wellcome to my Porfolio</h2>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   
   
-  <footer>
-    <section>
-      <h2>Contact</h2>
-      <ul>
-        <li><img src="images/email.jpg" alt="email">ebaadisu2@gmail.com</li>
-        <li><img src="images/linkedin.jpg" alt="linkedin">linkedin</li>
-        <li><img src="images/phone.jpg" alt="phone number">+251945813571</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Sitemap</h2>
-      <ul>
+  <footer class="section has-text-justify ">
+    <div class="columns is-flex is-justify-content-space-between is-fullhd" >
+    <div class="column" >
+      <h2 class="title has-text-white">Contact</h2>
+      <ul class="">
+          <li><i class="fa-regular fa-envelope"></i> ebaadisu2@gmail.com</li>
+          <li><i class="fa-brands fa-linkedin"></i> linkedin</li>
+          <li><i class="fa-solid fa-phone"></i> +251945813571</li>
+        </ul>
+    </div>
+    <div class="column mr-0">
+      <h2 class="title has-text-white">Sitemap</h2>
+      <ul class="">
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="hobbies.html">Hobbies</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </section>
-    <p>copyright</p>
+    </div>
+    </div>
+    <p class="text">copyright</p>
   </footer>
+  
  
 </body>
 </html>
