@@ -1,71 +1,135 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <title>Hobbies</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content=" width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css"/>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hobbies</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-  <header>
-    <a href="home.html"><img src="images/logo3.jpg" alt="logo"></a>
-    <nav>
-      <button class="dropbtn">
-        <img src="images/menu1.jpg" alt="menu">
-      </button>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="hobbies.html">Hobbies</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  
-  <main>
-    <img src="images/read.jpg" alt="reading"> 
-    <h2>Reading</h2>
-    <p>
-      i love to read lightnovels on my freetime
-    </p>
-    <img src="images/travel1.jpg" alt="traveling"> 
-    <h2>Traveling</h2>
-    <p>
-      i travel to new places on py freetimes
-    </p>
-    <img src="images/sing1.jpg" alt="singing"> 
-    <h2>Singing</h2>
-    <p>
-      i go to Karaoke sometimes
-    </p>
+<body class="bg-dark">
+
+    <header class="bg-success">
+        <nav class="container-fluid navbar navbar-expand-md navbar-dark p-4 flex-row row-cols-md-2 ">
+            <a href="#" class="navbar-brand text-xl font-bold text-gray-800 mr-10">
+                <span>Eba Adisu</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mr-auto" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="home.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link text-white">About</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link text-white">Projects</a></li>
+                    <li class="nav-item"><a href="hobbies.html" class="nav-link text-white">Hobbies</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link text-white">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="bg-dark">
+        <section class="container-fluid mx-auto py-3">
+            <div class="row ">
+                <div class="container col-md-8 col-lg-9 pr-md-0">
+                    <!-- Reading Section -->
+                    <div class="mb-4">
+                        <div class="container p-5">
+                            <figure class="mb-4">
+                                <img src="images/read.jpg" class="img-fluid" alt="Reading Image">
+                            </figure>
+                        </div>
+                        <h2 class="h2 text-white mb-2">Reading</h2>
+                        <p class="text-white">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a 
+                            type specimen book. It
+                        </p>
+                    </div>
+                
+                    <!-- Traveling Section -->
+                    <div class="mb-4">
+                        <div class="container p-5">
+                            <figure class="mb-4">
+                                <img src="images/travel1.jpg" class="img-fluid" alt="Traveling Image">
+                            </figure>
+                        </div>
+                        <h2 class="h2 text-white mb-2">Traveling</h2>
+                        <p class="text-white">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a 
+                            type specimen book. It
+                        </p>
+                    </div>
+                
+                    <!-- Singing Section -->
+                    <div class="mb-4">
+                        <div class="container p-5">
+                            <figure class="mb-4">
+                                <img src="images/sing2.jpg" class="img-fluid" alt="Singing Image">
+                            </figure>
+                        </div>
+                        <h2 class="h2 text-white mb-2">Singing</h2>
+                        <p class="text-white">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a 
+                            type specimen book. It
+                        </p>
+                    </div>
+                </div>
+                   
+                <div class="col-md-4 col-lg-3 d-none d-md-block order-first order-md-last">
+                    <aside class="content">
+                        <h2 class="text-white text-2xl mb-4">Follow me</h2>
+                        <ul class="list-unstyled">
+                            <li><i class="fab fa-youtube text-white"></i> <em class="text-white">youtube</em></li>
+                            <li><i class="fab fa-instagram text-white"></i> <em class="text-white">instagram</em></li>
+                            <li><i class="fab fa-facebook text-white"></i> <em class="text-white">facebook</em></li>
+                        </ul>
+                        <div class="mx-auto">
+                            <figure class="mb-4">
+                                <img src="images/profile3.jpg" alt="profile" class="img-fluid rounded-lg">
+                            </figure>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
     
-  </main>
-  
-  
-  <footer>
-    <section>
-      <h2>Contact</h2>
-      <ul>
-        <li><img src="images/email.jpg" alt="email">ebaadisu2@gmail.com</li>
-        <li><img src="images/linkedin.jpg" alt="linkedin">linkedin</li>
-        <li><img src="images/phone.jpg" alt="phone number">+251945813571</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Sitemap</h2>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="hobbies.html">Hobbies</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </section>
-    <p>copyright</p>
+          
+    <hr class="bg-info w-full m-3">
+    
+    <footer class="bg-dark text-white">
+      <div class="container d-flex justify-content-between">
+          <div class="">
+              <h2 class="text-2xl font-weight-bold mb-4">Contact</h2>
+              <ul class="list-unstyled">
+                  <li><i class="far fa-envelope"></i> ebaadisu2@gmail.com</li>
+                  <li><i class="fab fa-linkedin"></i> linkedin</li>
+                  <li><i class="fas fa-phone"></i> +251945813571</li>
+              </ul>
+          </div>
+          <div class="">
+              <h2 class="text-2xl font-weight-bold mb-4">Sitemap</h2>
+              <ul class="list-unstyled">
+                <li><a href="home.html" class="text-white">Home</a></li>
+                  <li><a href="about.html" class="text-white">About</a></li>
+                  <li><a href="projects.html" class="text-white">Projects</a></li>
+                  <li><a href="contact.html" class="text-white">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+      <p class="ml-3 text-gray-500 mt-0">Copy right</p>
+
   </footer>
- 
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  
 </body>
 </html>
